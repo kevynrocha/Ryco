@@ -29,4 +29,8 @@ flutter:
 
 flutter_icons:
   android: true
-  image_path: "assets/icon/icon-710x599-android.png"
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/icon/logo.png"
+  adaptive_icon_background: "#0f0e50"
+  adaptive_icon_foreground: "assets/icon/logo.png"
