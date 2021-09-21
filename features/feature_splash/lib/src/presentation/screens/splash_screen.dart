@@ -1,5 +1,10 @@
-import 'package:flutter/material.dart';
+import 'package:common_dependencies/common_dependencies.dart';
 import 'package:core/core.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+import '../cubit/splash_cubit.dart';
+import '../cubit/splash_state.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -7,14 +12,17 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Splash Screen')),
-      body: Container(
-        color: Colors.blueGrey,
+      backgroundColor: const Color(0xFF0F0E50),
+      body: BlocListener<SplashCubit, SplashState>(
+        listener: (context, state) {
+          if (state is SplashLoadSuccess) {
+            Navigator.pushReplacementNamed(context, AppRoutes.featureLogin);
+          }
+        },
         child: Center(
-          child: ElevatedButton(
-            child: const Text('Navigate to Home'),
-            onPressed: () =>
-                Navigator.pushNamed(context, AppRoutes.featureHome),
+          child: Image.asset(
+            'assets/images/icon.png',
+            package: 'feature_splash',
           ),
         ),
       ),
