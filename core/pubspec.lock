@@ -56,7 +56,7 @@ packages:
       path: "../common_dependencies"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "1.0.0"
   equatable:
     dependency: transitive
     description:

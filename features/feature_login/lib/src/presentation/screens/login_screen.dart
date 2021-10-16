@@ -34,7 +34,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   GestureDetector(
-                    onTap: () => print('voltar'),
+                    onTap: () {},
                     child: const Icon(
                       Icons.arrow_back_ios,
                       color: Color(0xFFFF5200),

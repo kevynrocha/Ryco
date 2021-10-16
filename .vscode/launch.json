@@ -1,0 +1,86 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "base_app",
+            "cwd": "base_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "base_app (profile mode)",
+            "cwd": "base_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "common_dependencies",
+            "cwd": "common_dependencies",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "common_dependencies (profile mode)",
+            "cwd": "common_dependencies",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "core",
+            "cwd": "core",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "core (profile mode)",
+            "cwd": "core",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "feature_home",
+            "cwd": "features\\feature_home",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "feature_home (profile mode)",
+            "cwd": "features\\feature_home",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "feature_login",
+            "cwd": "features\\feature_login",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "feature_login (profile mode)",
+            "cwd": "features\\feature_login",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "feature_splash",
+            "cwd": "features\\feature_splash",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "feature_splash (profile mode)",
+            "cwd": "features\\feature_splash",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        }
+    ]
+}

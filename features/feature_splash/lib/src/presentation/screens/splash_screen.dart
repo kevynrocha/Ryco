@@ -13,18 +13,29 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFF0F0E50),
-      body: BlocListener<SplashCubit, SplashState>(
+      body: BlocConsumer<SplashCubit, SplashState>(
         listener: (context, state) {
           if (state is SplashLoadSuccess) {
             Navigator.pushReplacementNamed(context, AppRoutes.featureLogin);
           }
         },
-        child: Center(
-          child: Image.asset(
-            'assets/images/icon.png',
-            package: 'feature_splash',
-          ),
-        ),
+        builder: (context, state) {
+          if (state is SplashLoadFailure) {
+            return const Center(
+              child: Text(
+                'Erro',
+                style: TextStyle(color: Colors.white),
+              ),
+            );
+          }
+
+          return Center(
+            child: Image.asset(
+              'assets/images/icon.png',
+              package: 'feature_splash',
+            ),
+          );
+        },
       ),
     );
   }
