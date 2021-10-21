@@ -9,9 +9,24 @@ class FeatureSplash extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (_) => SplashCubit()..init(),
-      child: const SplashScreen(),
+    return FutureBuilder<FirebaseApp>(
+      future: Firebase.initializeApp(),
+      builder: (context, firebase) {
+        if (firebase.hasData) {
+          return BlocProvider(
+            create: (_) => SplashCubit(
+              firebaseApp: firebase.data!,
+              firebaseAuth: FirebaseAuth.instance,
+              remoteConfig: RemoteConfig.instance,
+              firebaseAnalytics: FirebaseAnalytics(),
+              firebaseCrashlytics: FirebaseCrashlytics.instance,
+            )..init(),
+            child: const SplashScreen(),
+          );
+        }
+
+        return Container();
+      },
     );
   }
 }

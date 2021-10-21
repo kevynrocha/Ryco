@@ -1,0 +1,23 @@
+name: authentication_service
+description: A new Flutter package project.
+publish_to: none
+version: 1.0.0
+homepage:
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  common_dependencies:
+    path: "../../common_dependencies"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+
+flutter:

@@ -11,14 +11,17 @@ dependencies:
   flutter:
     sdk: flutter
 
+  common_dependencies:
+    path: ../common_dependencies
+
   feature_home:
-    path: "../features/feature_home"
+    path: ../features/feature_home
 
   feature_login:
-    path: "../features/feature_login"
+    path: ../features/feature_login
 
   feature_splash:
-    path: "../features/feature_splash"
+    path: ../features/feature_splash
 
 dev_dependencies:
   flutter_test:

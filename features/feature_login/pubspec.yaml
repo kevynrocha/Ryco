@@ -14,9 +14,16 @@ dependencies:
   common_dependencies:
     path: "../../common_dependencies"
 
+  authentication_service:
+    path: "../../services/authentication_service"
+
+  design_system:
+    path: "../../design_system"
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^1.0.0
 
 flutter:
+  

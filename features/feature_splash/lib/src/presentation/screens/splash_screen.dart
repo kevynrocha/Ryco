@@ -30,9 +30,15 @@ class SplashScreen extends StatelessWidget {
           }
 
           return Center(
-            child: Image.asset(
-              'assets/images/icon.png',
-              package: 'feature_splash',
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Image.asset(
+                  'assets/images/icon.png',
+                  package: 'feature_splash',
+                ),
+              ],
             ),
           );
         },
