@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v2
       - name: Moving build to artifacts directory
       run: ./scripts/tests.sh
 
