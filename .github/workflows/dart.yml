@@ -14,4 +14,4 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Testando
-        run: sh tests.sh
+        run: bash tests.sh
