@@ -4,6 +4,6 @@ jobs:
   flutter-tet:
     runs-on: ubuntu-latest
     steps:
-      uses: actions/checkout@v2
-      run: cd ../../
-      run: pwd
+      - uses: actions/checkout@v2
+        run: cd ../../
+        run: pwd
