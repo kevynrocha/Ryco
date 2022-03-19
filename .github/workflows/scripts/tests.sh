@@ -10,7 +10,3 @@ do
     flutter test
     cd ../../
 done
-
-
-
-
