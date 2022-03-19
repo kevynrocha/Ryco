@@ -17,5 +17,5 @@ jobs:
           channel: 'stable'
       - run: flutter --version
 
-      # - name: Testando
-      #   run: bash tests.sh
+      - name: Flutter testes
+        run: bash tests.sh
