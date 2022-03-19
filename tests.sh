@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
 
-dirs=(features/*/)
+pwd
 
-for dir in "${dirs[@]}" 
-do
-    cd $dir
-    flutter pub get
-    flutter analyze
-    flutter test
-    cd ../../
-done
+# dirs=(features/*/)
+
+# for dir in "${dirs[@]}" 
+# do
+#     cd $dir
+#     flutter pub get
+#     flutter analyze
+#     flutter test
+#     cd ../../
+# done
