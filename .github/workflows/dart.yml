@@ -15,4 +15,6 @@ jobs:
 
       - name: Testando
         run: ../../
+
+      - name: Testando 1
         run: pwd
