@@ -1,8 +1,17 @@
 name: Flutter
-on: [push]
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
 jobs:
-  flutter-tet:
+  build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
-      run: pwd
+
+      - name: Testando
+        run: pwd
