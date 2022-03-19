@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+cd features/
 echo "testando $PWD"
 
 # dirs=(features/*/)
