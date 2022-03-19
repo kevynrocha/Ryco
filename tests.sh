@@ -1,15 +1,13 @@
 #!/usr/bin/env bash
 
-cd features/
-echo "testando $PWD"
+dirs=(features/*/)
 
-# dirs=(features/*/)
-
-# for dir in "${dirs[@]}" 
-# do
-#     cd $dir
-#     flutter pub get
-#     flutter analyze
-#     flutter test
-#     cd ../../
-# done
+for dir in "${dirs[@]}" 
+do
+    cd $dir
+    echo "$dir"
+    flutter pub get
+    flutter analyze
+    flutter test
+    cd ../../
+done
