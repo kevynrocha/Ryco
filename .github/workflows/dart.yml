@@ -4,7 +4,20 @@ jobs:
   flutter-tet:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      # - run: ../../tests.sh
-      - run: cd ../../../features
-      - run: pwd
+      - name: test 1
+      uses: actions/checkout@v2
+      run: cd ../../
+      run: pwd
+
+      - name: test 2
+      uses: actions/checkout@v2
+      run: cd ../../../
+      run: pwd
+
+      - name: test 3
+      run: cd ../../
+      run: pwd
+
+      - name: test 4
+      run: cd ../../../
+      run: pwd
