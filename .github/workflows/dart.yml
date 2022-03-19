@@ -14,7 +14,4 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Testando
-        run: cd scripts
-
-      - name: Testando 1
         run: pwd
