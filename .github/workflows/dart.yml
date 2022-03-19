@@ -1,7 +1,5 @@
 name: Flutter
-on:
-  pull_request:
-    branches: [ master ]
+on: [push]
 jobs:
   flutter-tet:
     runs-on: ubuntu-latest
