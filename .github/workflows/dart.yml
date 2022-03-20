@@ -15,5 +15,5 @@ jobs:
       with:
         channel: 'stable'
         cache: true
-      run: bash tests.sh
+    - run: bash tests.sh
         
