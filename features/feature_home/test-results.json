@@ -1,0 +1,11 @@
+{"protocolVersion":"0.1.1","runnerVersion":null,"pid":14716,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"C:\\Users\\kevyn\\Projects\\Ryco\\features\\feature_home\\test\\feature_home_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading C:\\Users\\kevyn\\Projects\\Ryco\\features\\feature_home\\test\\feature_home_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":2}
+{"count":1,"time":11,"type":"allSuites"}
+
+[{"event":"test.startedProcess","params":{"observatoryUri":null}}]
+{"testID":1,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":2074}
+{"group":{"id":2,"suiteID":0,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":null,"column":null,"url":null},"type":"group","time":2078}
+{"test":{"id":3,"name":"should equals 1","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":4,"column":3,"url":"file:///C:/Users/kevyn/Projects/Ryco/features/feature_home/test/feature_home_test.dart"},"type":"testStart","time":2079}
+{"testID":3,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2104}
+{"success":true,"type":"done","time":2131}

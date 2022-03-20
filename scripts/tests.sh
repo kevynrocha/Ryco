@@ -7,6 +7,8 @@ do
     cd $dir
     flutter pub get
     flutter analyze
-    flutter test
+    flutter format --dry-run --set-exit-if-changed .
+    flutter test --coverage
+    flutter test --machine > test_results.json
     cd ../../
 done
