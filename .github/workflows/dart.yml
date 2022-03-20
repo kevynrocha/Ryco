@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  name: Run Flutter analyze and tests
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -15,5 +15,7 @@ jobs:
         with:
           channel: 'stable'
           cache: true
-      - run: bash tests.sh
+
+      - name: Flutter testes
+        run: bash tests.sh
         
