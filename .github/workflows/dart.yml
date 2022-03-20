@@ -15,7 +15,7 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
-        cache: true
+          cache: true
 
       - name: Flutter testes
         run: bash tests.sh
