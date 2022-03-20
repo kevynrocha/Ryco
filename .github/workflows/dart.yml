@@ -8,12 +8,12 @@ on:
 
 jobs:
   name: Run Flutter analyze and tests
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v2
-    - uses: subosito/flutter-action@v2
-      with:
-        channel: 'stable'
-        cache: true
-    - run: bash tests.sh
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+      - run: bash tests.sh
         
