@@ -17,13 +17,14 @@ jobs:
       - uses: subosito/flutter-action@v1
         with:
           channel: "stable"
+          flutter-version: "2.10.3"
           cache: true
-      - run: bash scripts/tests.sh
-      - uses: dorny/test-reporter@v1.5.0
-        with:
-          name: test-results
-          path: features/feature_home/test-results.json
-          reporter: flutter-json
+      # - run: bash scripts/tests.sh
+      # - uses: dorny/test-reporter@v1.5.0
+      #   with:
+      #     name: test-results
+      #     path: features/feature_home/test-results.json
+      #     reporter: flutter-json
       - uses: mattallty/jest-github-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
