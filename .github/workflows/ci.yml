@@ -24,3 +24,8 @@ jobs:
           name: test-results
           path: features/feature_home/test-results.json
           reporter: flutter-json
+      - uses: mattallty/jest-github-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          test-command: "flutter test"
