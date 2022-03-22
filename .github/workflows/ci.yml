@@ -13,15 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      # - uses: subosito/flutter-action@v1
-      #   with:
-      #     channel: "stable"
-      #     cache: true
-      # - run: bash scripts/tests.sh
-      - run: pwd
-      - run: cd ./features/
-      # - run: cd features
-      - run: cat test.txt
+      - uses: subosito/flutter-action@v1
+        with:
+          channel: "stable"
+          cache: true
+      - run: bash scripts/tests.sh
       # - uses: dorny/test-reporter@v1.5.0
       #   with:
       #     name: test-results
