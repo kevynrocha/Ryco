@@ -12,13 +12,14 @@ jobs:
     name: Run Flutter analyze and test
     runs-on: ubuntu-latest
     steps:
-      # - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       # - uses: subosito/flutter-action@v1
       #   with:
       #     channel: "stable"
       #     cache: true
       # - run: bash scripts/tests.sh
-      - run: cd features
+      - run: pwd
+      # - run: cd features
       - run: cat test.txt
       # - uses: dorny/test-reporter@v1.5.0
       #   with:
