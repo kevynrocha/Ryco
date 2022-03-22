@@ -19,6 +19,7 @@ jobs:
       #     cache: true
       # - run: bash scripts/tests.sh
       - run: pwd
+      - run: cd ./features/
       # - run: cd features
       - run: cat test.txt
       # - uses: dorny/test-reporter@v1.5.0
