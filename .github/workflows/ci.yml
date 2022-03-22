@@ -20,4 +20,4 @@ jobs:
         with:
           channel: "stable"
       - run: pwd
-      - run: bash tests.sh
+      - run: bash scripts/tests.sh
