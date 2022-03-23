@@ -26,6 +26,7 @@ jobs:
           path: features/feature_*/test-results.json
           reporter: flutter-json
           list-suites: 'failed'
+          list-tests: 'failed'
 
       # - uses: axel-op/dart-package-analyzer@v3
       #   id: analysis
