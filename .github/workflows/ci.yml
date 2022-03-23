@@ -12,17 +12,17 @@ jobs:
     name: Run Flutter analyze and test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: subosito/flutter-action@v2
-        with:
-          channel: "stable"
-          cache: true
+      # - uses: actions/checkout@v2
+      # - uses: subosito/flutter-action@v2
+      #   with:
+      #     channel: "stable"
+      #     cache: true
       # - run: bash scripts/tests.sh
-      - uses: axel-op/dart-package-analyzer@v3
-        id: analysis
-        with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-          relativePath:  features/feature_login/
+      # - uses: axel-op/dart-package-analyzer@v3
+      #   id: analysis
+      #   with:
+      #     githubToken: ${{ secrets.GITHUB_TOKEN }}
+      #     relativePath:  features/feature_login/
       - name: Testando
         run: |
           echo "${dirs=(features/*/)}"
