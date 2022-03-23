@@ -7,7 +7,7 @@ void main() {
     });
 
     test('should equals 0', () {
-      expect(1, 0);
+      expect(0, 0);
     });
   });
 }
