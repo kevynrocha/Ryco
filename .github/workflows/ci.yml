@@ -43,5 +43,3 @@ jobs:
       #       echo Score too low!
       #       exit 1
       #     fi
-
-     
