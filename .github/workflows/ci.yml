@@ -1,0 +1,25 @@
+name: CI
+on:
+  push:
+    branches: 
+      - master
+  pull_request:
+    branches: 
+      - master
+
+jobs:
+  flutter_test:
+    name: Run Flutter analyze and test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: subosito/flutter-action@v1
+        with:
+          channel: "stable"
+          cache: true
+      - run: bash scripts/tests.sh
+      # - uses: dorny/test-reporter@v1.5.0
+      #   with:
+      #     name: test-results
+      #     path: test-results.json
+      #     reporter: flutter-json
