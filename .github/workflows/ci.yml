@@ -17,7 +17,8 @@ jobs:
         with:
           channel: "stable"
           cache: true
-      
+
+      - name: Run tests
       - run: bash scripts/tests.sh
 
       - uses: dorny/test-reporter@v1.5.0
