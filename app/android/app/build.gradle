@@ -77,6 +77,10 @@ android {
             resValue "string", "app_name", "Standalone"
         }
     }
+
+    lintOptions {
+        checkReleaseBuilds false
+    }
 }
 
 flutter {
