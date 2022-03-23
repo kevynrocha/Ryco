@@ -25,6 +25,7 @@ jobs:
           name: test-results
           path: features/feature_*/test-results.json
           reporter: flutter-json
+          only-summary: 'true'
           list-suites: 'failed'
           list-tests: 'failed'
 
