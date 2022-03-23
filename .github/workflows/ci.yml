@@ -13,24 +13,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      # - uses: subosito/flutter-action@v2
-      #   with:
-      #     channel: "stable"
-      #     cache: true
-      # - run: bash scripts/tests.sh
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: "stable"
+          cache: true
+      
+      - run: bash scripts/tests.sh
+
+      - uses: dorny/test-reporter@v1.5.0
+      with:
+        name: test-results
+        path: features/feature_*/test-results.json
+        reporter: flutter-json
+
       # - uses: axel-op/dart-package-analyzer@v3
       #   id: analysis
       #   with:
       #     githubToken: ${{ secrets.GITHUB_TOKEN }}
       #     relativePath:  features/feature_login/
-      - name: Testando
-        run: |
-          paths:
-            - features/feature_home/
-            - features/feature_login/
-            - features/feature_splash/
-            
-          echo paths
 
       # - name: Check scores
       #   env:
@@ -44,8 +44,4 @@ jobs:
       #       exit 1
       #     fi
 
-      # - uses: dorny/test-reporter@v1.5.0
-      #   with:
-      #     name: test-results
-      #     path: features/feature_*/test-results.json
-      #     reporter: flutter-json
+     
