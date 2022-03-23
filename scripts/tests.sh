@@ -8,7 +8,7 @@ do
     flutter pub get
     flutter analyze
     flutter format --dry-run --set-exit-if-changed lib/
-    flutter test --coverage
-    flutter test --machine >> test-results.json
+    # flutter test --coverage
+    # flutter test --machine >> test-results.json
     cd ../../
 done
