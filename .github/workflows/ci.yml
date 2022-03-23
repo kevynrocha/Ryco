@@ -24,7 +24,7 @@ jobs:
       #     githubToken: ${{ secrets.GITHUB_TOKEN }}
       #     relativePath:  features/feature_login/
       - name: Testando
-        run: |
+        run:
           paths:
             - features/feature_home/
             - features/feature_login/
