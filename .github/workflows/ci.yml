@@ -17,11 +17,11 @@ jobs:
         with:
           channel: "stable"
           cache: true
-      # - run: bash scripts/tests.sh
+      - run: bash scripts/tests.sh
       - uses: axel-op/dart-package-analyzer@v3
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
-          relativePath: features/feature_*/
+          relativePath:  features/feature_*/
       # - uses: dorny/test-reporter@v1.5.0
       #   with:
       #     name: test-results
