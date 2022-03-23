@@ -25,7 +25,8 @@ jobs:
       #     relativePath:  features/feature_login/
       - name: Testando
         run: |
-          echo "${dirs=(features/*/)}"
+          dirs=(features/*/)
+          echo dirs
 
       # - name: Check scores
       #   env:
