@@ -23,17 +23,22 @@ jobs:
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           relativePath:  features/feature_login/
-      - name: Check scores
-        env:
-          TOTAL: ${{ steps.analysis.outputs.total }}
-          TOTAL_MAX: ${{ steps.analysis.outputs.total_max }}
+      - name: Testando
         run: |
-          PERCENTAGE=$(( $TOTAL * 100 / $TOTAL_MAX ))
-          if (( $PERCENTAGE < 50 ))
-          then
-            echo Score too low!
-            exit 1
-          fi
+          echo "${dirs=(features/*/)}"
+
+      # - name: Check scores
+      #   env:
+      #     TOTAL: ${{ steps.analysis.outputs.total }}
+      #     TOTAL_MAX: ${{ steps.analysis.outputs.total_max }}
+      #   run: |
+      #     PERCENTAGE=$(( $TOTAL * 100 / $TOTAL_MAX ))
+      #     if (( $PERCENTAGE < 50 ))
+      #     then
+      #       echo Score too low!
+      #       exit 1
+      #     fi
+
       # - uses: dorny/test-reporter@v1.5.0
       #   with:
       #     name: test-results
