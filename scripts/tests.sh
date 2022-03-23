@@ -12,9 +12,6 @@ do
     if grep -q "error •" <<< "$OUTPUT"; then
         echo "flutter analyze found errors"
         exit 1
-    else
-        echo "flutter analyze didn't find any errors"
-        exit 0
     fi
     # flutter analyze
     # flutter format --dry-run --set-exit-if-changed .
