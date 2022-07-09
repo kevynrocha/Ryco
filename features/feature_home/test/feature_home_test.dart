@@ -6,7 +6,7 @@ void main() {
       expect(1, 1);
     });
 
-    test('should equals 0', () {
+    test('should equals 0!', () {
       expect(0, 0);
     });
   });
