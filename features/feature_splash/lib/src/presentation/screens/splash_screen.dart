@@ -1,6 +1,5 @@
 import 'package:common_dependencies/common_dependencies.dart';
 import 'package:core/core.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../cubit/splash_cubit.dart';

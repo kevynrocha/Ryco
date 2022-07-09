@@ -16,10 +16,11 @@ class LoginCubit extends Cubit<LoginState> {
 
   Future<AuthenticatedUser?> signInWithGoogle() async {
     try {
-      await _authentication.signIn();
+      return await _authentication.signIn();
     } on Exception catch (exception, stack) {
       await _firebaseCrashlytics.recordError(exception, stack);
       emit(LoginLoadFailure());
+      return null;
     }
   }
 

@@ -42,6 +42,7 @@ class AuthenticationImpl implements Authentication {
       return UserResponseMapper.map(userCredentials);
     } on Exception catch (exception, stack) {
       await firebaseCrashlytics.recordError(exception, stack);
+      rethrow;
     }
   }
 
